@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>IronForge Pro | Heavy-Duty Construction Equipment</title>
+  <!-- Preconnect & Fonts: Industrial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR (Industrial Dark) ========== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <i class="fas fa-hard-hat"></i>
+        <span>IRON<span class="accent">FORGE</span> PRO</span>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#" data-category="all" class="nav-category active-cat">All Gear</a></li>
+          <li><a href="#" data-category="hand-tools" class="nav-category">Hand Tools</a></li>
+          <li><a href="#" data-category="power-tools" class="nav-category">Power Tools</a></li>
+          <li><a href="#" data-category="heavy-machinery" class="nav-category">Heavy Machinery</a></li>
+          <li><a href="#" data-category="safety-gear" class="nav-category">Safety Gear</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon-wrapper">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <span class="cart-counter" id="cartCounter">0</span>
+      </div>
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>HEAVY-DUTY EQUIPMENT <br><span class="accent-text">FOR PRO BUILDERS</span></h1>
+      <p>Industrial grade reliability • Precision engineering • Unmatched durability</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" id="shopNowBtn">Shop Now <i class="fas fa-arrow-right"></i></button>
+        <button class="btn btn-outline" id="quoteBtn">Request Quote <i class="fas fa-file-invoice"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT GRID SECTION (3 items + dynamic filtering shows all initially) ========== -->
+  <section class="products-section" id="productsSection">
+    <div class="container">
+      <div class="section-header">
+        <h2>PREMIUM <span class="accent-text">INDUSTRIAL GEAR</span></h2>
+        <div class="underline"></div>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products injected via JS (3 core items + additional safety gear to show filtering) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CUSTOMER REVIEWS (Slider / cards) ========== -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>TRUSTED BY <span class="accent-text">INDUSTRY LEADERS</span></h2>
+        <div class="underline"></div>
+      </div>
+      <div class="reviews-slider-container">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- dynamic review cards injected via JS -->
+        </div>
+        <button class="slider-btn prev-btn" id="prevReviewBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn" id="nextReviewBtn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <div class="footer-logo"><i class="fas fa-tools"></i> IronForge Pro</div>
+        <p>Built for the toughest job sites. Professional grade equipment for contractors, builders, and heavy industries.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> +1 (800) 555-HEAVY</p>
+        <p><i class="fas fa-envelope"></i> sales@ironforgepro.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 IronForge Pro — Industrial Strength Equipment</p>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
